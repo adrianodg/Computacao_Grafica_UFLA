@@ -50,7 +50,7 @@ Depois disso os pontos de entrada e saída do segmento na área de recorte podem
 
 **22. Quantos segmentos de elipse podem ser definidos pelo recorte de uma elipse em relação a um retângulo? Mostre graficamente.**
 
-Esta em um pdf no repositorio.  
+Esta em pdf no repositorio - "exerc22.pdf".  
 
 _Feedback do professor: Questão 21: Fez uma explicação geral mas respondeu a pergunta, quais pontos do exemplo eram PS e quais eram PE? Quais tinha t maior e quais tinham t menor?_
 
@@ -93,3 +93,15 @@ _Feedback do professor: Q26 II - fala de eficiência, justificativa fala de "res
  Q26 IV - a justifica não aborda a fonte de luz no infinito.  
  Q28 b - justifica com uma consequência ao invés de uma causa; é comum o uso de 24 bits de cor + 8 de transparência porque 32 bits de cor não necessariamente trariam benefícios e não o contrário.  
  Q28 c - justificativa sem sentido já que imagens PeB não seguem um sistema de representação de cores, não concordo que CG se preocupe mais com as formas que as cores._
+ 
+## Exercicio 30
+
+**Escolha os pixels para desenhar o segmento entre (2, 1) e (7, 4), seguindo o algoritmo do ponto médio.**
+
+Esta em pdf no repositorio - "pontos_ex30.pdf".  
+
+## Exercicio 31
+
+**Observe esse vídeo em que a tela de um celular foi filmada por uma câmera digital. Explique o aparecimento de linhas e curvas na imagem da tela do celular.**
+
+O aparecimento de linhas e curvas na imagem da tela ocorre por um efeito chamado Aliasing que é o resultado da perda de informação na conversão de informações de natureza contínua em informações discretas. Nesse caso em específico o efeito é o aliasing espacial que também é responsável pelo aparecimento de padrões moiré, comuns em função da popularização de fotos e filmes digitais. Televisores, câmeras digitais e celulares usam uma técnica de digitalização para produzir ou capturar imagens com linhas horizontais de varredura, logo, quando se filma uma tela os conjuntos de linhas conflitantes causam os padrões moiré. Além disso o celular apresenta uma imagem com uma resolução relativamente baixa o que implica na baixa quantidade de elementos discretos presentes no espaço de apresentação isso gera uma acentuação dos padrões. Quando a câmera aproxima-se do celular, assim, aumentando ainda mais a percepção da baixa densidade dos pixels na tela, o padrão moiré se torna mais visível. Quando a câmera se afasta ocorre o efeito contrário e nota-se uma diminuição dos padrões. Há várias formas de evitar o aliasing, como aumentar a resolução do dispositivo ou aplicar filtros anti-aliasing.
