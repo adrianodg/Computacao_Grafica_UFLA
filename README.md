@@ -1,5 +1,4 @@
-# Computacao_Grafica_UFLA
-Exercícios feitos na disciplina Computação Gráfica - UFLA
+# Computacao Grafica UFLA - GCC124
 
 Exercicios teoricos da **"Lista de Exercícios de Computação Gráfica"** - http://professores.dcc.ufla.br/~bruno/aulas/cg/exerc/
 
