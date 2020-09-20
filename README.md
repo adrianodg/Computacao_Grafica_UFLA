@@ -88,3 +88,8 @@ b. (F) Em sistemas 32 bits para identificar um pixel na tela, neste caso, os 8 b
 c. (V) Apesar dos muitos modelos de representação de cores, a conversão de um para outro é teoricamente sempre possível. Assim uma imagem colorida pode ser tratada de forma parecida a uma preto e branca, uma vez que a computação gráfica se preocupa mais em como gerar a imagem ou modelo do que as cores dos mesmos.  
 
 d. (F) Não existe problema algum em usar o sistema CMYK em arquivos que armazenam imagens, pois se for preciso em outro sistema, basta converter.
+
+_Feedback do professor: Q26 II - fala de eficiência, justificativa fala de "resultados bons".  
+ Q26 IV - a justifica não aborda a fonte de luz no infinito.  
+ Q28 b - justifica com uma consequência ao invés de uma causa; é comum o uso de 24 bits de cor + 8 de transparência porque 32 bits de cor não necessariamente trariam benefícios e não o contrário.  
+ Q28 c - justificativa sem sentido já que imagens PeB não seguem um sistema de representação de cores, não concordo que CG se preocupe mais com as formas que as cores._
