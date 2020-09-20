@@ -50,4 +50,41 @@ Depois disso os pontos de entrada e saída do segmento na área de recorte podem
 
 **22. Quantos segmentos de elipse podem ser definidos pelo recorte de uma elipse em relação a um retângulo? Mostre graficamente.**
 
-Esta em um pdf no repositorio
+Esta em um pdf no repositorio.  
+
+_Feedback do professor: Questão 21: Fez uma explicação geral mas respondeu a pergunta, quais pontos do exemplo eram PS e quais eram PE? Quais tinha t maior e quais tinham t menor?_
+
+
+## Exercicios 24, 26, 27 e 28
+
+**24. Alguns programas de computador definem cores em relação a valores intitulados RGB, alguns usam valores intitulados CMYK e alguns usam os dois. Explique o que esses valores significam, para exemplificar, cite quais seriam os valores (nos dois sistemas) para definir as cores preto e branco.**
+
+RGB corresponde às iniciais das 3 cores Red (vermelho), Green (verde) e Blue (azul). Uma cor no modelo de cores é descrita indicando quanto de cada cor está incluído. A cor é expressa por três valores (r, g, b), que podem variar de zero a um valor máximo definido. Se todos os componentes estiverem em zero, o resultado será preto, e se todos estiverem no máximo, o resultado será o branco mais brilhante possível. Nos computadores, os valores muitas vezes são armazenados como números inteiros no intervalo de 0 a 255, o intervalo que um único byte de 8 bits pode oferecer. Os valores no sistema geralmente são representados como números decimais ou hexadecimais. Na notação decimal a cor preta pode ser representada por (0,0,0) e a branca (255,255,255).
+
+CMYK corresponde às letras das cores Cian (ciano), Magenta (magenta), Yellow (amarelo) and Black (preto). ​ O modelo funciona devido à absorção de luz, pelo fato de que as colorações que são vistas vêm da parte da luz que não é absorvida. É definido como um sistema subtrativo de cores. ​ Uma cor no modelo de cores é descrita indicando quanto de cada cor está incluído. A cor é expressa por quatro valores que representam a porcentagem da cor específica incluída. Os valores podem variar de 0 a 100 ou de 0 a 1. Assim, no primeiro intervalo a cor preta pode ser representada por (0,0,0,100) e a branca (0,0,0,0).
+
+**26. [ENADE 2017] Em computação gráfica, existem vários modelos de iluminação diferentes que expressam e controlam os fatores que determinam a cor de uma superfície em função de um determinado conjunto de luzes. Uma vez definido um modelo de iluminação, pode-se aplicar luz sobre as várias faces dos objetos de uma cena, processo denominado sombreamento. A figura à esquerda ilustra a aplicação de dois modelos de iluminação, a saber: o modelo de sombreamento constante (à esquerda) e o modelo de Phong (à direita).**
+
+A alternativa correta é a B.  
+
+A afirmação I está correta, pois as Bandas de Mach são a tendência do olho humano de ver faixas claras ou escuras perto dos limites entre áreas com iluminação nitidamente diferente.  
+
+A afirmação II está incorreta, pois o método Phong produz resultados bons, ele é um meio-termo entre aplicar o modelo de iluminação em cada ponto e o método de Gouraud.  
+
+A afirmação III está correta, pois o modelo de sombreamento constante, gera as Bandas de Mach, esse efeito é uma das desvantagem do modelo, que o torna indesejável mesmo para objetos compostos de polígonos pequenos. Assim o cérebro humano tende a destacar as variações de intensidade de luz. Isso gera um destaque para a linha divisória onde a intensidade muda, deixando a imagem menos realista.  
+
+A afirmação IV está incorreta, pois no método de Phong não é necessária a suposição. Ele é um método que faz a interpolação d​ as normais da superfície entre polígonos rasterizados e calcula as cores dos pixels. A definição é que o modelo de iluminação precisa ser aplicado a cada pixel do polígono.
+
+**27. Na imagem ao lado, temos a vista frontal de um armário muito distante do observador, à frente de uma parede de tijolos brancos. Observa-se que em determinados pontos, o programa que gerou a imagem "achou" que a parede estava à frente do armário. A parede é representada por um único retângulo e toda a parte frontal do armário é representa por outro retângulo. Supondo que o programador deseja resolver este problema através da troca do algoritmo de determinação de superfícies visíveis, que características deve ter o novo algoritmo escolhido?**
+
+O algoritmo deve ordenar todos os polígonos da cena em relação à distância entre eles e o observador, depois desenhar os polígonos em ordem, do mais distante do observador até o mais próximo. Pode-se processar a representação dos polígonos, produzindo novos polígonos que podem efetivamente ser ordenados e então desenhados de trás para frente.
+
+**28. Assinale como V ou F**
+
+a. (V) Para um objeto cuja superfície é polida, os raios de luz tendem a ser refletidos de maneira previsível. Porém nenhuma superfície é um espelho perfeito, mas a luzrefletida num objeto polido fica mais concentrada numa direção simétrica (em relação à normal) à direção de incidência. Logo gera-se um reflexo.  
+
+b. (F) Em sistemas 32 bits para identificar um pixel na tela, neste caso, os 8 bits restantes possivelmente servem para identificar transparência, possibilitando que, ao ser desenhado, a cor de um pixel na tela dependa da cor que estava previamente naquela posição. Isso não necessariamente deixa os resultados “bem mais realísticos que os sistemas que usam 24 bits” é apenas uma abordagem diferente.  
+
+c. (V) Apesar dos muitos modelos de representação de cores, a conversão de um para outro é teoricamente sempre possível. Assim uma imagem colorida pode ser tratada de forma parecida a uma preto e branca, uma vez que a computação gráfica se preocupa mais em como gerar a imagem ou modelo do que as cores dos mesmos.  
+
+d. (F) Não existe problema algum em usar o sistema CMYK em arquivos que armazenam imagens, pois se for preciso em outro sistema, basta converter.
